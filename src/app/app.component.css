@@ -72,6 +72,7 @@
 
   .team-container{
     margin-bottom: 1rem;
+    background-color: rgb(230, 218, 63);
   }
 
   .team-container ul{
@@ -79,3 +80,5 @@
     margin: 0;
     padding: 0.5rem;
   }
+
+ 
