@@ -3,6 +3,15 @@
     width: 40rem;
     margin: 0 auto;
   }
+
+    .toprow{
+      display: flex;
+      justify-content: center;
+      background-color: rgb(93, 122, 187);
+      font-size: 200%;
+      padding: 20px;
+    }
+
   
   h1 {
     font-size: 3rem;
@@ -70,15 +79,5 @@
     cursor: pointer;
   }
 
-  .team-container{
-    margin-bottom: 1rem;
-    background-color: rgb(230, 218, 63);
-  }
-
-  .team-container ul{
-    border: 0.1rem solid rgba(128,128,128,0.418);
-    margin: 0;
-    padding: 0.5rem;
-  }
-
+ 
  

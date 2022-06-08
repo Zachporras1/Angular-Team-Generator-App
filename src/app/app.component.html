@@ -1,9 +1,9 @@
 
-<header>Zach P Production</header>
+<header class="toprow">Team Generator</header>
 
 <div class="container">
 <div class="ui card">
-  <h1>Team Generator</h1>
+  <h1>Enter Team Below</h1>
   <ul class="list">
     <li *ngFor="let member of members"> {{member}}</li>
   </ul>
@@ -14,7 +14,7 @@
     (input)="onInput(addMemberInput.value)"
     [value]="newMemberName"
     />
-    <button (click)="addMember()">Add</button>
+    <button (click)="addMember()">Add Member</button>
   </div>
   
   <div class="input-container">
@@ -24,20 +24,14 @@
     [value]="numberOfTeams"
     />
 
-    <button (click)="generateTeams()" >Generate</button>
+    <button (click)="generateTeams()" >Generate Random Teams </button>
   </div>
 
   <p *ngIf="errorMessage" class="error-msg">{{errorMessage}}</p>
 </div>
 
 <div *ngIf="teams.length" class="teams-container">
-  <div *ngFor="let team of teams;let i=index" class="team-container">
-      <h3>Team {{i+1}}</h3>
-      <ul >
-        <li *ngFor="let member of team"> {{member}}</li>
-      </ul>
-  </div>
-
+<app-team *ngFor="let team of teams;let i=index" [team]="team" [index]="i"></app-team>
 </div>
 </div> 
 
