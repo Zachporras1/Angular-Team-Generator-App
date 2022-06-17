@@ -1,37 +1,12 @@
 
-<header class="toprow">Team Generator</header>
+<nav class="navi"><a routerLink="teamgen">Teams</a><a routerLink="home">Home</a></nav>
 
-<div class="container">
-<div class="ui card">
-  <h1>Enter Team Below</h1>
-  <ul class="list">
-    <li *ngFor="let member of members"> {{member}}</li>
-  </ul>
-  
-  <div class="add-members-container">
-    <input type="text" placeholder="Name"
-    #addMemberInput
-    (input)="onInput(addMemberInput.value)"
-    [value]="newMemberName"
-    />
-    <button (click)="addMember()">Add Member</button>
-  </div>
-  
-  <div class="input-container">
-    <input type="text" placeholder="# of teams"
-    #numberOfTeamsInput
-    (input)="onNumberOfTeamsInput(numberOfTeamsInput.value)"
-    [value]="numberOfTeams"
-    />
 
-    <button (click)="generateTeams()" >Generate Random Teams </button>
-  </div>
+<router-outlet></router-outlet>
 
-  <p *ngIf="errorMessage" class="error-msg">{{errorMessage}}</p>
-</div>
 
-<div *ngIf="teams.length" class="teams-container">
-<app-team *ngFor="let team of teams;let i=index" [team]="team" [index]="i"></app-team>
-</div>
-</div> 
 
+<footer>
+  <ul>Created By Zach Porras</ul>
+  <ul>Version 1</ul>
+</footer>
