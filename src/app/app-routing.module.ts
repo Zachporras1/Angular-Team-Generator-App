@@ -9,9 +9,10 @@ import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes=[
+   {  path:'home', component:HomeComponent},
+   {path:'',component:HomeComponent},
+  {path:'teamgen', component:TeamGenComponent}
 
-  {path:'teamgen', component:TeamGenComponent},
-   {  path:'home', component:HomeComponent}
 ]
 
 
