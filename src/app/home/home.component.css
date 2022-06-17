@@ -1,0 +1,16 @@
+.welcome{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1{
+    padding-top: 5em;
+    font-size: 300%;
+    color: rgb(0, 68, 255);
+}
+
+h2,h3{
+    text-decoration: underline;
+}
+
