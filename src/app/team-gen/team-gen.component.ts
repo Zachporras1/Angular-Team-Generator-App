@@ -12,6 +12,7 @@ export class TeamGenComponent implements OnInit {
   errorMessage = '';
   numberOfTeams: number | string = '';
   teams: string[][] = [];
+  clearTeam!:boolean;
 
   addMember() {
     if (!this.newMemberName) {
@@ -22,6 +23,15 @@ export class TeamGenComponent implements OnInit {
     this.members.push(this.newMemberName);
     this.newMemberName = '';
     this.errorMessage = '';
+  }
+
+  clearTeams(){
+
+      this.clearTeam=!this.clearTeam
+        this.members=[];
+        this.errorMessage='';
+        this.newMemberName='';
+      
   }
 
   onInput(member: string) {

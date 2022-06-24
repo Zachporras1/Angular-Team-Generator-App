@@ -4,7 +4,7 @@
 <div class="ui card">
   <h1>Enter Team Below</h1>
   <ul class="list">
-    <li *ngFor="let member of members"> {{member}}</li>
+    <li *ngFor="let member of members"> {{member|titlecase}}</li>
   </ul>
   
   <div class="add-members-container">
@@ -14,6 +14,7 @@
     [value]="newMemberName"
     />
     <button (click)="addMember()">Add Member</button>
+    <button (click)="clearTeams()" >Clear </button>
   </div>
   
   <div class="input-container">
