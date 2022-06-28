@@ -14,7 +14,7 @@
     [value]="newMemberName"
     />
     <button (click)="addMember()">Add Member</button>
-    <button (click)="clearTeams()" >Clear </button>
+    <button (click)="clearTeams()" >Clear Memebers </button>
   </div>
   
   <div class="input-container">
@@ -25,8 +25,9 @@
     />
 
     <button (click)="generateTeams()" >Generate Random Teams </button>
+  
   </div>
-
+  <button class="team-gen" (click)="clearRandom()">Clear Teams</button>
   <p *ngIf="errorMessage" class="error-msg">{{errorMessage}}</p>
 </div>
 

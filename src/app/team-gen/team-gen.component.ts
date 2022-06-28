@@ -34,6 +34,10 @@ export class TeamGenComponent implements OnInit {
       
   }
 
+  clearRandom(){
+    this.teams=[];
+  }
+
   onInput(member: string) {
     this.newMemberName = member;
     console.log(this.newMemberName);
