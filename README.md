@@ -1,6 +1,6 @@
 # Teamapp
 
-Visit Webpage: https://zachporras1.github.io/Angular-Team-Generator-App/teamgen
+Visit Webpage: https://zachporras1.github.io/Angular-Team-Generator-App/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
 
